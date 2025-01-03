@@ -1,0 +1,225 @@
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:60px;
+    background-color: black;
+    z-index: 200;
+}
+
+#logo{
+    height:60px;
+    width: 100%;
+    background-size: cover;
+}
+
+.middle-section{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left:20px;
+}
+
+.icons{
+    margin-right:30px;
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+    height:60px;
+    align-content: center;
+}
+
+.icons:hover{
+    border-bottom: 2px solid white;
+    cursor:pointer;
+}
+
+.right-section i{
+    color:white;
+}
+
+.background-img{
+    width:100%;
+    margin:0;
+    padding:0;
+    position:relative;
+    z-index: -1;
+    height:400px;
+    object-fit:cover;
+    margin-top: 50px;
+}
+
+#catchy-line{
+    position:absolute;
+    transform: translate(-50%, -50%);
+    top:230px;
+    left:53%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fa-user {
+    
+    height:40px;
+    margin-top:20px;
+    width:40px;
+    margin-right:20px;
+}
+
+.description p, ul{
+    font-size: 20px;
+}
+
+.description button{
+    height: 35px;
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    background: url("sign in img.avif");
+   
+    
+    cursor: pointer;
+    
+}
+
+.description button a{
+    font-family:'Times New Roman', Times, serif;
+    font-size:20px;
+    color: white;
+    text-decoration:none;
+}
+
+.description button:hover{
+    transform: scale(1.05);
+}
+
+.description{
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding:8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.description:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#destinations{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    margin: 20px;
+
+}
+
+
+  
+.destination-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.destination-container h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    background-image: url("sign in img.avif");
+    color:white;
+    padding: 4px;
+    background-repeat: no-repeat;
+    background-size:cover
+}
+
+#destinations {
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+
+
+.right-section{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+
+.fa-user:hover{
+     transform: scale(1.15);
+}
+
+.dropdown-box{
+    position:relative;
+}
+
+.profile-btn{
+    cursor:pointer;
+    background-color:transparent;
+    border:none;
+}
+
+#menu{
+    top:50px;
+    position:absolute;
+    right:15px;
+    font-size: 20px;
+    background-color: rgba(255,255,255,0.2);
+    padding: 20px;
+    border:4px;
+    border-color: rgba(111, 109, 109, 0.8) ;
+    display: none;
+    width: 300px;
+    
+}
+
+#menu li a{
+    text-decoration: none;
+    color:black;
+}
+
+#menu li {
+    color: black;
+}
+
+
