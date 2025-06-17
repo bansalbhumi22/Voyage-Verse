@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
 .header{
     position: fixed;
     left: 0;
@@ -10,7 +16,7 @@
     justify-content: space-between;
     align-items:center;
     z-index: 100;
-    
+    padding-right:30px;
 }
 
 #logo{
@@ -22,9 +28,32 @@
     display:flex;
     align-items: center;
     flex-direction: row;
-    margin-left:10px;
-    margin-right:50px;}
+   
+    justify-content: center;
+}
   
+.right-section{
+    display:flex;
+    align-items: center;
+    flex-direction: row;   
+}
+
+.btn-head{
+    width:10vh;
+    height:4vh;
+    border-radius: 30px;
+    background-color:transparent;
+    color:white;
+    border: 2px solid white;
+    cursor:pointer;
+
+}
+
+.btn-head:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
 
 .icons{
     
@@ -40,23 +69,40 @@
     border-bottom: 2px solid white;
 }
 
-.background-img{
-    width:100%;
-    margin:0;
-    padding:0;
+
+
+.hero-section{
     position:relative;
-    z-index: -1;
-    height:400px;
+    width:100%;
+    height:500px;
+    overflow:hidden;
+}
+.background-img{
     object-fit:cover;
-    margin-top: 50px;
+    height:100%;
+    width:100%;
+    filter:brightness(0.6);
 }
 
 #catchy-line{
-    position:absolute;
+    position: absolute;
+    top: 45%;/* position the box of cacthy-line*/
+    left: 50%;
     transform: translate(-50%, -50%);
-    top:230px;
-    left:53%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    font-size:30px;
+    text-align: center; /*center the text*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.button-container{
+    position: absolute;
+    top:60%;
+    gap:10px;
+    left:50%;
+    transform:translate(-50%);/*pulls it back by half of its own width, which results in perfect horizontal centering*/
+    display:flex;
     
 }
 
@@ -64,18 +110,21 @@
     text-align: center;
     border-radius: 15px;
     height: 35px;
-    width: 120px;
+    width: 15vh;
     background-color: transparent;
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.8) ;
     cursor:pointer;
-    position: absolute;
-    top: 300px;
-    left: 45%
+    color:white;
+   
+    
     
 }
 
 
 .btn:hover{
+    background-color:white;
+    color:black;
+    box-shadow:none;
     transform: scale(1.05);
 }
 
@@ -106,6 +155,7 @@
 
 
 #destinations{
+    
     display: flex;
     justify-content:center;
     gap: 20px;
